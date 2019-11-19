@@ -1,0 +1,217 @@
+/* 2.4.2.1 - Use CSS3 to format the appearance of paragraphs, lists, headers, background images, tables, forms */
+.body1 {
+  background: url(bowl.jpg) no-repeat center;
+  background-size: cover;
+  height: 830px;
+  position: relative;
+}
+
+.greeting {
+  padding-top: 80px;
+  margin-left: 10%;
+  font-family: milk;
+}
+
+.exp {
+  font-size: 4rem;
+  color: white;
+}
+
+/* 2.4.2.4 - Use of structural pseudo-class: first-of-type. */
+p:first-of-type {
+  color: grey;
+  font-size: 3.4rem;
+  text-transform: uppercase;
+}
+
+@font-face {
+  font-family: milk;
+  src: url(LemonMilk.otf);
+}
+
+.ingredients {
+  padding-top: 80px;
+  text-align: center;
+  font-size: 3rem;
+  font-family: milk;
+}
+
+.body2 {
+  background: url(veg.jpg) no-repeat center;
+  background-size: cover;
+  height: 800px;
+  position: relative;
+}
+
+.body3 {
+  background-image: url(wood.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.call {
+  color: white;
+  font-size: 2rem;
+  padding: 60px;
+  text-align: center;
+  font-family: milk;
+}
+
+#phone {
+  width: 15%;
+  filter: invert();
+  display: block;
+  position: relative;
+  margin: auto;
+  padding: 50px;
+}
+
+/* 2.4.2.4 - Use of dynamic pseudo-classes to highlight hyperlinks states of link, visited, active, hover. */
+#phone:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+@font-face {
+  font-family: caviar;
+  src: url(caviar.ttf);
+}
+
+.block1 {
+  text-align: left;
+  font-family: caviar;
+  font-size: 1.8rem;
+  background-color: rgba(40, 38, 38, 0.7);
+  height: auto;
+  border-radius: 70px;
+  position: relative;
+  top: 100px;
+  left: 80px;
+  width: 900px;
+  font-style: italic;
+}
+
+.block2 {
+  text-align: left;
+  font-family: caviar;
+  font-size: 1.8rem;
+  background-color: rgba(40, 38, 38, 0.7);
+  height: auto;
+  border-radius: 70px;
+  position: relative;
+  top: 200px;
+  margin-left: auto;
+  right: 80px;
+  width: 900px;
+  font-style: italic;
+}
+
+.block3 {
+  text-align: left;
+  font-family: caviar;
+  font-size: 1.8rem;
+  background-color: rgba(40, 38, 38, 0.7);
+  height: auto;
+  border-radius: 70px;
+  position: relative;
+  top: 300px;
+  left: 80px;
+  width: 900px;
+  font-style: italic;
+}
+
+.block4 {
+  text-align: left;
+  font-family: caviar;
+  font-size: 1.8rem;
+  background-color: rgba(40, 38, 38, 0.7);
+  height: auto;
+  border-radius: 70px;
+  position: relative;
+  top: 400px;
+  margin-left: auto;
+  right: 80px;
+  width: 900px;
+  font-style: italic;
+}
+
+blockquote {
+  padding: 50px 70px 50px 70px;
+  color: white;
+}
+
+.quote::before {
+  content: '\201C';
+  position: absolute;
+  top: 0em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3rem;
+  height: 2rem;
+  font: 6em/1.08em 'PT Sans', sans-serif;
+  /* 2.4.2.3 - Use of CSS3 styles for color HSLA */
+  color: hsla(0, 0%, 1%, 0.83);
+  text-align: center;
+}
+
+.quote::after {
+  content: '\201D';
+  position: absolute;
+  bottom: 0em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3rem;
+  height: 2rem;
+  font: 6em/1.08em 'PT Sans', sans-serif;
+  /* 2.4.2.3 - Use of CSS3 styles for color RGBA */
+  color: rgba(5, 5, 5, 0.83);
+  text-align: center;
+}
+
+.block-container {
+  background: url(village.jpg);
+  background-size: cover;
+  height: 1580px;
+}
+
+/* 2.4.2.2 Use of atrribute selector */
+button[name="read-more"] {
+  position: relative;
+  top: 500px;
+  left: 50%;
+  width: 10%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  color: white;
+  padding: 2px;
+}
+
+/* 2.4.2.2 - Use of atrribute selector */
+button[name="read-more"] a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+  font-family: milk;
+}
+
+.menu {}
+
+.items {
+  display: flex;
+  flex-flow: column nowrap;
+  max-height: 6em;
+  padding: 30px;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+
+/* 2.4.2.2 Use of contextual selector */
+.items>dt {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* 2.4.2.2 - Use of contextual selector */
+.items>dd {
+  padding: 1em;
+}

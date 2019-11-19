@@ -1,0 +1,6 @@
+/* 2.4.2.1 - Use CSS3 to format the appearance of paragraphs, lists, headers, background images, tables, forms */
+body {
+  background-image: url(pattern.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

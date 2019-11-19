@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" type="text/css" href="navFooter.css">
+  <link rel="stylesheet" type="text/css" href="contactCss.css">
+</head>
+
+<body>
+  <div class="banner">
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html"><img alt="Jacob's Noodle & Cutlet" src="Jacobs%20noodle.jpg" id="noodle"></a>
+        </div>
+        <ul class="menu">
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="xRef.html">X-ref</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <h1>Contact Us</h1>
+  <h3>By Email</h3>
+  <div class="container">
+    <!-- 2.4.3.1 - Use of appropriate form elements including some of the new HTML5 form elements. -->
+    <form class="myForm" action="submit.html" method="post">
+      <ul>
+        <legend><span class="number">1 </span>Customer Info</legend>
+        <li id="box1">
+          <label for="box1">
+            <input type="text" name="box1" value="" placeholder="First Name*" required>
+            <input type="text" name="box1" value="" placeholder="Last Name*" required>
+          </label>
+        </li>
+        <li>
+          <label for="box2">
+            <input type="text" name="box2" value="" placeholder="Your Email*" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>
+            <input type="text" name="box2" value="" placeholder="Phone*" pattern="^(1?(-?\d{3})-?)?(\d{3})(-?\d{4})$" required>
+          </label>
+        </li>
+        <legend><span class="number">2 </span>Message</legend>
+        <li>
+          <label for="box3">
+            <textarea name="box3" rows="8" cols="80" placeholder="Your Message"></textarea>
+          </label>
+        </li>
+        <legend><span class="number">3 </span>Feedback</legend>
+        <li>
+          <label for="box5">
+        <li>
+          <textarea name="box5" rows="8" cols="80" placeholder="How Can We Improve?"></textarea>
+        </li>
+        </label>
+        </li>
+        <li class="button">
+          <input type="submit" value="Submit">
+        </li>
+      </ul>
+    </form>
+  </div>
+  <h2>Or you can call us</h2>
+  <div class="call">
+    <a href="tel:778-471-3597"><img id="phone" src="call.svg"></a>
+  </div>
+</body>
+
+</html>
