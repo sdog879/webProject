@@ -1,0 +1,30 @@
+body {
+    background-image: url("jacob-s-noodle-cutlet.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+@font-face {
+    font-family: milk;
+    src: url(LemonMilk.otf);
+}
+
+h1 {
+    font-family: milk;
+    padding-top: 80px;
+    margin-left: 5%;
+    font-size: 3.4rem;
+}
+
+.story {
+    border: red 5px solid;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: grey;
+
+
+}
+
+p#break {
+    padding-bottom: 80px;
+}
