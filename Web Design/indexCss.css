@@ -1,320 +1,477 @@
 /* 2.4.2.1 - Use CSS3 to format the appearance of paragraphs, lists, headers, background images, tables, forms */
 .body1 {
-    background: url(bowl.jpg) no-repeat center;
-    background-size: cover;
-    height: 830px;
-    position: relative;
+  /* 2.4.2.5 - Use of CSS3 background styles (background size, background-clip, background- origin, padding, margins, borders, use of an appropriate border style, use of rounded corners. */
+  background: url(bowl.jpg) no-repeat center;
+  background-size: cover;
+  height: 830px;
+  background-attachment: fixed;
+  z-index: -1;
 }
 
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
 .greeting {
-    padding-top: 80px;
-    margin-left: 10%;
-    font-family: milk;
+  padding-top: 80px;
+  margin-left: 10%;
+  font-family: milk;
+  position: fixed;
 }
 
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
 .exp {
-    font-size: 4rem;
-    color: white;
+  font-size: 4rem;
+  color: white;
+  position: fixed;
 }
 
 /* 2.4.2.4 - Use of structural pseudo-class: first-of-type. */
 p:first-of-type {
-    color: grey;
-    font-size: 3.4rem;
-    text-transform: uppercase;
+  color: grey;
+  font-size: 3.4rem;
+  text-transform: uppercase;
 }
 
 @font-face {
-    font-family: milk;
-    src: url(LemonMilk.otf);
+  font-family: milk;
+  src: url(LemonMilk.otf);
 }
 
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
 .ingredients {
-    padding-top: 80px;
-    text-align: center;
-    font-size: 3rem;
-    font-family: milk;
+  padding-top: 80px;
+  text-align: center;
+  font-size: 3rem;
+  font-family: milk;
 }
 
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
 .body2 {
-    background: url(veg.jpg) no-repeat center;
-    background-size: cover;
-    height: 800px;
-    position: relative;
-}
-
-.body3 {
-    background-image: url(wood.jpg);
-    background-size: cover;
-    position: relative;
-}
-
-.call {
-    color: white;
-    font-size: 2rem;
-    padding: 60px;
-    text-align: center;
-    font-family: milk;
-}
-
-#phone {
-    width: 15%;
-    filter: invert();
-    display: block;
-    position: relative;
-    margin: auto;
-    padding: 50px;
-}
-
-/* 2.4.2.4 - Use of dynamic pseudo-classes to highlight hyperlinks states of link, visited, active, hover. */
-#phone:hover {
-    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  /* 2.4.2.5 - Use of CSS3 background styles (background size, background-clip, background- origin, padding, margins, borders, use of an appropriate border style, use of rounded corners. */
+  background: url(veg.jpg) no-repeat center;
+  background-size: cover;
+  height: 800px;
+  position: relative;
 }
 
 @font-face {
-    font-family: caviar;
-    src: url(caviar.ttf);
+  font-family: caviar;
+  src: url(caviar.ttf);
 }
 
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
+/* 2.4.2.5 - Use of CSS3 background styles (background size, background-clip, background- origin, padding, margins, borders, use of an appropriate border style, use of rounded corners. */
 .block1 {
-    text-align: left;
-    font-family: caviar;
-    font-size: 1.8rem;
-    background-color: rgba(40, 38, 38, 0.7);
-    height: auto;
-    border-radius: 70px;
-    position: relative;
-    top: 100px;
-    left: 80px;
-    width: 900px;
-    font-style: italic;
+  text-align: left;
+  font-family: caviar;
+  font-size: 1.8rem;
+  background-color: rgba(40, 38, 38, 0.7);
+  height: auto;
+  border-radius: 70px;
+  position: relative;
+  top: 100px;
+  left: 80px;
+  width: 900px;
+  font-style: italic;
 }
 
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
+/* 2.4.2.5 - Use of CSS3 background styles (background size, background-clip, background- origin, padding, margins, borders, use of an appropriate border style, use of rounded corners. */
 .block2 {
-    text-align: left;
-    font-family: caviar;
-    font-size: 1.8rem;
-    background-color: rgba(40, 38, 38, 0.7);
-    height: auto;
-    border-radius: 70px;
-    position: relative;
-    top: 200px;
-    margin-left: auto;
-    right: 80px;
-    width: 900px;
-    font-style: italic;
+  text-align: left;
+  font-family: caviar;
+  font-size: 1.8rem;
+  background-color: rgba(40, 38, 38, 0.7);
+  height: auto;
+  border-radius: 70px;
+  position: relative;
+  top: 200px;
+  margin-left: auto;
+  right: 80px;
+  width: 900px;
+  font-style: italic;
 }
 
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
+/* 2.4.2.5 - Use of CSS3 background styles (background size, background-clip, background- origin, padding, margins, borders, use of an appropriate border style, use of rounded corners. */
 .block3 {
-    text-align: left;
-    font-family: caviar;
-    font-size: 1.8rem;
-    background-color: rgba(40, 38, 38, 0.7);
-    height: auto;
-    border-radius: 70px;
-    position: relative;
-    top: 300px;
-    left: 80px;
-    width: 900px;
-    font-style: italic;
+  text-align: left;
+  font-family: caviar;
+  font-size: 1.8rem;
+  background-color: rgba(40, 38, 38, 0.7);
+  height: auto;
+  border-radius: 70px;
+  position: relative;
+  top: 300px;
+  left: 80px;
+  width: 900px;
+  font-style: italic;
 }
 
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
+/* 2.4.2.5 - Use of CSS3 background styles (background size, background-clip, background- origin, padding, margins, borders, use of an appropriate border style, use of rounded corners. */
 .block4 {
-    text-align: left;
-    font-family: caviar;
-    font-size: 1.8rem;
-    background-color: rgba(40, 38, 38, 0.7);
-    height: auto;
-    border-radius: 70px;
-    position: relative;
-    top: 400px;
-    margin-left: auto;
-    right: 80px;
-    width: 900px;
-    font-style: italic;
+  text-align: left;
+  font-family: caviar;
+  font-size: 1.8rem;
+  background-color: rgba(40, 38, 38, 0.7);
+  height: auto;
+  border-radius: 70px;
+  position: relative;
+  top: 400px;
+  margin-left: auto;
+  right: 80px;
+  width: 900px;
+  font-style: italic;
 }
 
 blockquote {
-    padding: 50px 70px 50px 70px;
-    color: white;
+  padding: 50px 70px 50px 70px;
+  color: white;
 }
 
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
 .quote::before {
-    content: '\201C';
-    position: absolute;
-    top: 0em;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 3rem;
-    height: 2rem;
-    font: 6em/1.08em 'PT Sans', sans-serif;
-    /* 2.4.2.3 - Use of CSS3 styles for color HSLA */
-    color: hsla(0, 0%, 1%, 0.83);
-    text-align: center;
+  content: '\201C';
+  position: absolute;
+  top: 0em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3rem;
+  height: 2rem;
+  font: 6em/1.08em 'PT Sans', sans-serif;
+  /* 2.4.2.3 - Use of CSS3 styles for color HSLA */
+  color: hsla(0, 0%, 1%, 0.83);
+  text-align: center;
 }
 
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
 .quote::after {
-    content: '\201D';
-    position: absolute;
-    bottom: 0em;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 3rem;
-    height: 2rem;
-    font: 6em/1.08em 'PT Sans', sans-serif;
-    /* 2.4.2.3 - Use of CSS3 styles for color RGBA */
-    color: rgba(5, 5, 5, 0.83);
-    text-align: center;
+  content: '\201D';
+  position: absolute;
+  bottom: 0em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3rem;
+  height: 2rem;
+  font: 6em/1.08em 'PT Sans', sans-serif;
+  /* 2.4.2.3 - Use of CSS3 styles for color RGBA */
+  color: rgba(5, 5, 5, 0.83);
+  text-align: center;
 }
 
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
 .block-container {
-    background: url(village.jpg);
-    background-size: cover;
-    height: 1580px;
+  background: url(village.jpg);
+  background-size: cover;
+  height: 1620px;
+  position: relative;
 }
 
-/* 2.4.2.2 Use of atrribute selector */
+@font-face {
+  font-family: google;
+  src: url(google.woff2);
+}
+
+/* 2.4.2.2 - Use of atrribute selector */
 button[name="read-more"] {
-    position: relative;
-    top: 500px;
-    left: 50%;
-    width: 10%;
-    height: auto;
-    transform: translate(-50%, -50%);
-    border-radius: 50px;
-    color: white;
-    padding: 2px;
+  position: relative;
+  top: 500px;
+  left: 50%;
+  width: 20%;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0px 1px 0px 0px #f5978e;
+  /* 2.4.2.5 - Use of CSS3 background styles (background size, background-clip, background- origin, padding, margins, borders, use of an appropriate border style, use of rounded corners. */
+  background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+  background-color: #f24537;
+  border-radius: 6px;
+  border: 1px solid #d02718;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #810e05;
+}
+
+button[name="read-more"]:hover {
+  background: linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+  background-color: #c62d1f;
+}
+
+button[name="read-more"]:active {
+  position: relative;
+  top: 1px;
 }
 
 /* 2.4.2.2 - Use of atrribute selector */
 button[name="read-more"] a {
-    text-decoration: none;
-    color: black;
-    font-size: 0.8rem;
-    font-family: milk;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-family: google;
 }
 
 .menu-food {
-    display: inline-block;
-    padding: 30px;
-    height: 2000px;
-    background-color: rgba(98, 98, 98, 0.57);
+  display: inline-block;
+  padding: 30px;
+  height: 2000px;
+  background-color: rgb(159, 159, 159);
+  position: relative;
+  width: 100%;
 }
 
 .items {
-    max-height: 6em;
-    padding: 30px;
-    font-size: 1.2rem;
-    font-family: sans-serif;
+  max-height: 6em;
+  padding: 30px;
+  font-size: 1.2rem;
+  font-family: sans-serif;
 }
 
 /* 2.4.2.2 Use of contextual selector */
-.items > dt {
-    font-weight: bold;
-    font-family: milk;
-    padding: 5px;
+.items>dt {
+  font-weight: bold;
+  font-family: milk;
+  padding: 5px;
 }
 
 /* 2.4.2.2 - Use of contextual selector */
-.items > dd {
-    margin-left: auto;
-    font-family: caviar;
+.items>dd {
+  margin-left: auto;
+  font-family: caviar;
 }
 
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
 .app {
-    width: 33%;
-    position: relative;
+  width: 33%;
+  position: relative;
 }
 
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
 .soup-salad {
-    width: 33%;
-    position: relative;
-    left: 33%;
+  width: 33%;
+  position: relative;
+  left: 33%;
 }
 
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
 .tempura {
-    width: 33%;
-    position: relative;
-    left: 66%;
+  width: 33%;
+  position: relative;
+  left: 66%;
 }
 
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
 .sashimi {
-    width: 33%;
-    position: relative;
-    top: 150px;
+  width: 33%;
+  position: relative;
+  top: 150px;
 }
 
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
 .maki {
-    width: 33%;
-    position: relative;
-    left: 33%;
-    top: 150px;
+  width: 33%;
+  position: relative;
+  left: 33%;
+  top: 150px;
 }
 
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
 .rolls {
-    width: 33%;
-    position: relative;
-    left: 66%;
-    top: 150px;
+  width: 33%;
+  position: relative;
+  left: 66%;
+  top: 150px;
 }
 
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
 .katsu {
-    width: 33%;
-    position: relative;
-    top: 220px;
+  width: 33%;
+  position: relative;
+  top: 220px;
 }
 
-.menu-food > h1 {
-    font-size: 3rem;
-    font-family: milk;
-    text-align: center;
-    background-color: rgba(211, 252, 212, 0.71);
-    border: solid 1px red;
-    width: 20%;
-    border-radius: 55px;
-    margin: auto;
-    border-width: medium;
+/* 2.4.2.2 - Use of contextual selector */
+.menu-food>h1 {
+  font-size: 3rem;
+  font-family: milk;
+  text-align: center;
+  background-color: rgba(211, 252, 212, 0.71);
+  border: solid 1px red;
+  width: 20%;
+  border-radius: 55px;
+  margin: auto;
+  border-width: medium;
 }
 
-.menu-food > .app > h2, .menu-food > .soup-salad > h2, .menu-food > .tempura > h2, .menu-food > .sashimi > h2, .menu-food > .maki > h2, .menu-food > .rolls > h2, .menu-food > .katsu > h2 {
-    font-family: milk;
-    font-size: rem;
-    text-align: center;
-    border: solid 1px red;
-    border-radius: 55px;
-    border-width: medium;
-    background-color: rgba(211, 252, 212, 0.71);
+/* 2.4.2.2 - Use of contextual selector */
+.menu-food>.app>h2, .menu-food>.soup-salad>h2, .menu-food>.tempura>h2, .menu-food>.sashimi>h2, .menu-food>.maki>h2, .menu-food>.rolls>h2, .menu-food>.katsu>h2 {
+  font-family: milk;
+  font-size: rem;
+  text-align: center;
+  /* 2.4.2.5 - Use of CSS3 background styles (background size, background-clip, background- origin, padding, margins, borders, use of an appropriate border style, use of rounded corners. */
+  border: solid 1px red;
+  border-radius: 55px;
+  border-width: medium;
+  background-color: rgba(211, 252, 212, 0.71);
 }
 
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
 #sushi {
-    width: 16%;
-    position: relative;
-    left: 75%;
-    bottom: 550px;
-    opacity: 0.8;
+  width: 16%;
+  position: relative;
+  left: 75%;
+  bottom: 630px;
+  height: 250px;
+  /* 2.4.2.11 - Use of CSS3 opacity applied to two images to appear semi-transparent. */
+  opacity: 0.8;
 }
 
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
 #sushi2 {
-    width: 25%;
-    position: relative;
-    top: 50px;
-    left: 22%;
-    opacity: 0.8;
+  width: 25%;
+  position: relative;
+  top: 80px;
+  left: 23%;
+  height: 450px;
+  /* 2.4.2.11 - Use of CSS3 opacity applied to two images to appear semi-transparent. */
+  opacity: 0.8;
 }
 
-#noodle {
-    width: 25%;
-    position: relative;
-    left: 30%;
-    bottom: 1160px;
-    opacity: 0.95;
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
+#noodle2 {
+  width: 25%;
+  position: relative;
+  left: 30%;
+  height: 350px;
+  bottom: 1260px;
+  /* 2.4.2.11 - Use of CSS3 opacity applied to two images to appear semi-transparent. */
+  opacity: 0.95;
 }
 
-.menu-food > p {
-    font-family: milk;
-    font-size: 4rem;
-    position: relative;
-    margin-left: 40%;
-    top: 9%;
-    color: rgba(227, 28, 28, 0.6);
+/* 2.4.2.2 - Use of contextual selector */
+.menu-food>p {
+  font-family: milk;
+  font-size: 4rem;
+  position: relative;
+  margin-left: 40%;
+  top: 7%;
+  color: rgba(227, 28, 28, 0.6);
+}
+
+/* 2.4.2.6 - Your home page should have a drop cap created with CSS3. */
+blockquote:first-child:first-letter {
+  color: #c2040a;
+  float: left;
+  font-family: google;
+  font-size: 6rem;
+  line-height: 60px;
+  padding-top: 2px;
+  padding-right: 8px;
+  padding-left: 3px;
+  padding-bottom: 2px;
+}
+
+/* 2.4.2.6 - Your home page should have a drop cap created with CSS3. */
+/* 2.4.2.4 - Use of structural pseudo-class: last-of-type. */
+blockquote:last-of-type:first-child:first-letter {
+  color: #c2040a;
+  float: left;
+  font-family: google;
+  font-size: 6rem;
+  line-height: 60px;
+  padding-top: 2px;
+  padding-right: 8px;
+  padding-left: 3px;
+  padding-bottom: 2px;
+}
+
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
+.button1 {
+  display: inline;
+  position: relative;
+  right: 10%;
+  width: 25%;
+  /* 2.4.2.5 - Use of CSS3 background styles (background size, background-clip, background- origin, padding, margins, borders, use of an appropriate border style, use of rounded corners. */
+  margin: 1.5em;
+  padding: 0.67em;
+  border: 3px solid #FFF;
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 2rem;
+  justify-content: center;
+  outline: none;
+  color: #FFF;
+  background: transparent;
+  font-family: google;
+  font-weight: bold;
+}
+
+/* 2.4.2.7 - Define document content with the class and id properties and create styles for them. */
+.button2 {
+  display: inline;
+  position: relative;
+  left: 10%;
+  width: 25%;
+  /* 2.4.2.5 - Use of CSS3 background styles (background size, background-clip, background- origin, padding, margins, borders, use of an appropriate border style, use of rounded corners. */
+  margin: 1.5em;
+  padding: 0.67em;
+  border: 3px solid #FFF;
+  overflow: hidden;
+  text-decoration: none;
+  justify-content: center;
+  font-size: 2rem;
+  outline: none;
+  color: #FFF;
+  background: transparent;
+  font-family: google;
+  font-weight: bold;
+}
+
+.ingredients a {
+  text-decoration: none;
+}
+
+.button1 span, .button2 span {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.button1:before, .button1:after, .button2:before, .button2:after {
+  content: '';
+  position: absolute;
+  top: 0.67em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: .4s, opacity .6s;
+  transition: .4s, opacity .6s;
+}
+
+.button1:before, .button2:before {
+  content: attr(click-hover);
+  -webkit-transform: translate(-150%, 0);
+  transform: translate(-150%, 0);
+}
+
+.button1:after, .button2:after {
+  content: attr(click-hover);
+  -webkit-transform: translate(150%, 0);
+  transform: translate(150%, 0);
+}
+
+.button1:hover span, .button2:hover span {
+  opacity: 0;
+  -webkit-transform: scale(0.3);
+  transform: scale(0.3);
+}
+
+.button1:hover:before, .button2:hover:before {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition-delay: .4s;
+  transition-delay: .4s;
 }

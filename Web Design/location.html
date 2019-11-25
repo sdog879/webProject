@@ -1,31 +1,166 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Location</title>
-    <link rel="stylesheet" type="text/css" href="navFooter.css">
-  </head>
-  <body>
-    <div class="banner">
-      <header>
-        <nav>
-          <div class="logo">
-            <!-- 2.4.1.2 -->
-            <a href="index.html"><img alt="Jacob's Noodle & Cutlet" src="Jacobs%20noodle.jpg" id="noodle"></a>
-          </div>
-          <ul class="menu">
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="location.html">Location</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="xRef.html">X-ref</a></li>
-          </ul>
-        </nav>
-      </header>
+
+<head>
+  <meta charset="utf-8">
+  <title>Location - Jacobs Noodle & Cutlet</title>
+  <link rel="stylesheet" type="text/css" href="navFooter.css">
+  <link rel="stylesheet" type="text/css" href="locationCss.css">
+  <script type="text/javascript">
+    function openClose() {
+      var date = new Date();
+      var day = date.getDay();
+      var hour = date.getHours();
+
+      if (day == 0) {
+        document.getElementById("open-close").innerHTML = "closed";
+        document.getElementById("open-close").style.fontWeight = "bold";
+      } else {
+        if (hour >= 10 && hour <= 20) {
+          document.getElementById("open-close").innerHTML = "open";
+          document.getElementById("open-close").style.color = "green";
+          document.getElementById("open-close").style.fontWeight = "bold";
+        } else {
+          document.getElementById("open-close").innerHTML = "closed";
+          document.getElementById("open-close").style.fontSize = "bold";
+        }
+      }
+    }
+
+    function showTime() {
+      var date = new Date();
+      var h = date.getHours();
+      var m = date.getMinutes();
+      var s = date.getSeconds();
+      var amPm = "AM";
+
+      if (h == 0) {
+        h = 12;
+      }
+
+      if (h > 12) {
+        h = h - 12;
+        amPm = "PM";
+      }
+      s = checkTime(s);
+      m = checkTime(m);
+
+      document.getElementById('clock').innerHTML = h + ":" + m + ":" + s + " " + amPm;
+    }
+
+    function checkTime(i) {
+      if (i < 10) {
+        i = "0" + i;
+      }
+      return i;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="banner">
+    <header>
+      <nav>
+        <div class="logo">
+          <!-- 2.4.1.2 -->
+          <a href="index.html"><img alt="Jacob's Noodle & Cutlet" src="Jacobs noodle.jpg" id="noodle"></a>
+        </div>
+        <ul class="menu">
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="xRef.html">X-ref</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <div class="parralax">
+    <video autoplay loop>
+      <source src="zoomedIn2.mp4" type="video/mp4">
+      Your Browser Does Not Support Video
+    </video>
+  </div>
+  <div class="top">
+    <div id="clock" class="clock"></div>
+    <h1 class="location">Our Location</h1>
+    <p class="location"><em>260 4 Ave, Kamloops, BC V2C 2A9</em>, Located in the heart of downtown Kamloops.</p>
+  </div>
+  <div class="main">
+    <div class="body-wrapper">
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.405318455947!2d-120.334351684197!3d50.67530107901853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537e2dab4040f26d%3A0xbd1aefd61e1511c!2sJacob&#39;s%20Noodle%20%26%20Cutlet!5e0!3m2!1sen!2sca!4v1573375900955!5m2!1sen!2sca"
+          width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+
+      <div class="hours">
+        <h3>Hours of Operation</h3>
+        <table id="hoursTable">
+          <tr>
+            <th>Sunday</th>
+            <td>Closed</td>
+          </tr>
+          <tr>
+            <th>Monday</th>
+            <td>11AM - 9PM</td>
+          </tr>
+          <tr>
+            <th>Tuesday</th>
+            <td>11AM - 9PM</td>
+          </tr>
+          <tr>
+            <th>Wednesday</th>
+            <td>11AM - 9PM</td>
+          </tr>
+          <tr>
+            <th>Thursday</th>
+            <td>11AM - 9PM</td>
+          </tr>
+          <tr>
+            <th>Friday</th>
+            <td>11AM - 9PM</td>
+          </tr>
+          <tr>
+            <th>Saturday</th>
+            <td>11AM - 9PM</td>
+          </tr>
+        </table>
+        <p>We are <span id="open-close"></span> now.</p>
+      </div>
     </div>
-    <h1>Our Location</h1>
-    <p>Loacted in the heart of downtown Kamloops.</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.405318455947!2d-120.334351684197!3d50.67530107901853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537e2dab4040f26d%3A0xbd1aefd61e1511c!2sJacob&#39;s%20Noodle%20%26%20Cutlet!5e0!3m2!1sen!2sca!4v1573375900955!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    <p>Come see us soon for an unforgettable experience!</p>
-  </body>
+  </div>
+  <footer>
+    <div class="footer-content">
+      <div class="call">
+        <h2>Contact us</h2>
+        <a href="https://www.facebook.com/JacobsNoodleAndCutlet/"><img id="fb" src="facebook.svg"></a>
+        <a href="tel:778-471-3597"><img id="phone" src="call.svg"></a>
+      </div>
+      <div class="links">
+        <h2>Quick Links</h2>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="location.html">Location</a>
+        <a href="contact.html">Contact</a>
+        <a href="xRef.html">X-ref</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <!-- 2.4.1.3 - Use of appropriate special characters. -->
+      <em>Jacobs Noodle & Cutlet</em> &#9702;
+      260 - 4th Avenue &#9702;
+      Kamloops V2C 3N5, Canada &#9702;
+      (778) 471-3597
+      <!-- 2.4.1.5 - A footer on the home page indicating when the web site was last updated or modified. -->
+      <span id="date">Date last modified: November 28, 2019</span>
+    </div>
+  </footer>
+  <script>
+    setInterval(openClose, 1000);
+    setInterval(showTime, 1000);
+  </script>
+</body>
+
 </html>

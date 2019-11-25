@@ -1,1 +1,133 @@
-/* 2.4.2.1 - Use CSS3 to format the appearance of paragraphs, lists, headers, background images, tables, forms */
+ /* 2.4.2.1 - Use CSS3 to format the appearance of paragraphs, lists, headers, background images, tables, forms */
+ body {
+   background-color: black;
+ }
+
+ .parralax {
+   height: 450px;
+   padding-bottom: 50px;
+   padding-top: 50px;
+ }
+
+ .parralax video {
+   min-width: 100%;
+   position: fixed;
+   top: 0;
+   z-index: -999;
+   margin-top: -200px;
+ }
+
+ @font-face {
+   font-family: google;
+   src: url(google.woff2);
+ }
+
+ .video {
+   max-height: 600px;
+ }
+
+ .main {
+   width: 100%;
+   height: auto;
+   position: relative;
+   background-color: rgb(145, 0, 9);
+   padding-bottom: 30px;
+ }
+
+ .top {
+   position: relative;
+   width: 100%;
+   margin: auto;
+   background-color: rgb(145, 0, 9);
+ }
+
+ .top>p {
+   font-family: google;
+   font-size: 1.2rem;
+ }
+
+ .body-wrapper {
+   position: relative;
+   width: 80%;
+   height: 100%;
+   display: inline-flex;
+   background-color: rgba(199, 199, 199, 0.63);
+   padding: 30px;
+ }
+
+ div.main {
+   padding-top: 2%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+ }
+
+ .map {
+   width: 100%;
+ }
+
+ div.hours {
+   position: relative;
+   margin-left: 5%;
+   padding-top: 4%;
+   width: 100%;
+ }
+
+ h1.location {
+   text-align: center;
+   padding-top: 2%;
+   font-family: milk, sans-serif;
+   color: white;
+   font-size: 3rem;
+ }
+
+ .top>h1 {
+   padding-top: 0;
+ }
+
+ p.location {
+   text-align: center;
+   padding-top: 2%;
+   font-family: "PT sans", sans-serif;
+   color: white;
+ }
+
+ table#hoursTable {
+   padding: 30px;
+   box-shadow: 10px 10px 5px rgb(92, 92, 92);
+   width: 100%;
+   background-color: white;
+   font-size: 1.3rem;
+   font-family: google;
+ }
+
+ .hours>h3 {
+   font-size: 1.7rem;
+   font-family: milk;
+   text-align: center;
+   padding-bottom: 20px;
+ }
+
+ .hours>p {
+   text-align: center;
+   font-size: 1.3rem;
+   font-family: google;
+   font-weight: bold;
+   padding-top: 20px;
+ }
+
+ th {
+   font-family: milk, sans-serif;
+ }
+
+ .clock {
+   position: relative;
+   margin-left: 75%;
+   width: 17%;
+   text-align: center;
+   top: 50px;
+   color: white;
+   font-size: 2rem;
+   font-family: milk;
+   letter-spacing: 7px;
+ }
